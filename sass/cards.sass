@@ -13,7 +13,31 @@
     height: 350px
 
         
-@mixin carousel-cards-mobile
+.carousel-cards-mobile
     width: 330px
     height: 440px
     border-radius: 16px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    display: flex
+    align-items: flex-end
+    .detail
+        height: 195px
+        width: 100%
+        padding: 10px 20px
+        display: flex
+        flex-direction: column
+        color: #f5f5f5
+        .coming-date
+            font-size: 10px
+            margin-bottom: 8px
+            font-weight: 600
+        .game-info
+            font-size: 16px
+            margin-bottom: 25px
+            line-height: 20px
+        .start-price
+            font-size: 15px
+        .price
+            font-size: 17px

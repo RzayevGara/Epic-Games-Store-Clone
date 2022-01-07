@@ -18,6 +18,55 @@ a {
   text-decoration: none;
 }
 
+.carousel-cards-mobile, .carousel .carousel-div .first-card, .carousel .carousel-div .second-card, .carousel .carousel-div .third-card, .carousel .carousel-div .fourth-card, .carousel .carousel-div .fifth-card, .carousel .carousel-div .sixth-card {
+  width: 330px;
+  height: 440px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.carousel-cards-mobile .detail, .carousel .carousel-div .first-card .detail, .carousel .carousel-div .second-card .detail, .carousel .carousel-div .third-card .detail, .carousel .carousel-div .fourth-card .detail, .carousel .carousel-div .fifth-card .detail, .carousel .carousel-div .sixth-card .detail {
+  height: 195px;
+  width: 100%;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f5f5f5;
+}
+
+.carousel-cards-mobile .detail .coming-date, .carousel .carousel-div .first-card .detail .coming-date, .carousel .carousel-div .second-card .detail .coming-date, .carousel .carousel-div .third-card .detail .coming-date, .carousel .carousel-div .fourth-card .detail .coming-date, .carousel .carousel-div .fifth-card .detail .coming-date, .carousel .carousel-div .sixth-card .detail .coming-date {
+  font-size: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.carousel-cards-mobile .detail .game-info, .carousel .carousel-div .first-card .detail .game-info, .carousel .carousel-div .second-card .detail .game-info, .carousel .carousel-div .third-card .detail .game-info, .carousel .carousel-div .fourth-card .detail .game-info, .carousel .carousel-div .fifth-card .detail .game-info, .carousel .carousel-div .sixth-card .detail .game-info {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+
+.carousel-cards-mobile .detail .start-price, .carousel .carousel-div .first-card .detail .start-price, .carousel .carousel-div .second-card .detail .start-price, .carousel .carousel-div .third-card .detail .start-price, .carousel .carousel-div .fourth-card .detail .start-price, .carousel .carousel-div .fifth-card .detail .start-price, .carousel .carousel-div .sixth-card .detail .start-price {
+  font-size: 15px;
+}
+
+.carousel-cards-mobile .detail .price, .carousel .carousel-div .first-card .detail .price, .carousel .carousel-div .second-card .detail .price, .carousel .carousel-div .third-card .detail .price, .carousel .carousel-div .fourth-card .detail .price, .carousel .carousel-div .fifth-card .detail .price, .carousel .carousel-div .sixth-card .detail .price {
+  font-size: 17px;
+}
+
 body {
   overflow-y: scroll;
   height: 2000px;
@@ -300,16 +349,68 @@ header .navbar .hamburger-menu .line {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 15px;
+  padding: 0 15px;
+  overflow: hidden;
+  position: relative;
 }
 
-.carousel .cards {
-  width: 330px;
-  height: 440px;
-  border-radius: 16px;
-  background-image: url(/image/gow.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.carousel .carousel-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+  position: relative;
+  left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.carousel .carousel-div .first-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/gow.jpg);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/gow.jpg);
+}
+
+.carousel .carousel-div .second-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/naraka.jpeg);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/naraka.jpeg);
+}
+
+.carousel .carousel-div .third-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/genshin.jpeg);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/genshin.jpeg);
+}
+
+.carousel .carousel-div .fourth-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/r6.png);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/r6.png);
+}
+
+.carousel .carousel-div .fifth-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/final-fantasy.jpeg);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/final-fantasy.jpeg);
+}
+
+.carousel .carousel-div .sixth-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url(/image/kena.jpg);
+  background-image: linear-gradient(#36333300, #000000b6), url(/image/kena.jpg);
+}
+
+.carousel .carousel-buttons {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.carousel .carousel-buttons .fa-circle {
+  color: rgba(245, 245, 245, 0.384);
+  font-size: 5px;
 }
 /*# sourceMappingURL=index-style.css.map */

@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=cards.css.map */
+.carousel-cards-mobile {
+  width: 330px;
+  height: 440px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.carousel-cards-mobile .detail {
+  height: 195px;
+  width: 100%;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #f5f5f5;
+}
+
+.carousel-cards-mobile .detail .coming-date {
+  font-size: 10px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.carousel-cards-mobile .detail .game-info {
+  font-size: 16px;
+  margin-bottom: 25px;
+  line-height: 20px;
+}
+
+.carousel-cards-mobile .detail .start-price {
+  font-size: 15px;
+}
+
+.carousel-cards-mobile .detail .price {
+  font-size: 17px;
+}
+/*# sourceMappingURL=cards.css.map */

@@ -162,10 +162,41 @@ header
     height: 475px
     background-color: $grey
     display: flex
-    padding-left: 15px
-    .cards
-        @include carousel-cards-mobile
-        background-image: url(/image/gow.jpg)
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center
+    padding: 0 15px
+    overflow: hidden
+    position: relative
+    .carousel-div
+        display: flex
+        gap: 15px
+        position: relative
+        left: 0
+        transition: 0.3s
+        .first-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6),url(/image/gow.jpg)
+        .second-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6), url(/image/naraka.jpeg)
+        .third-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6), url(/image/genshin.jpeg)
+        .fourth-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6), url(/image/r6.png)
+        .fifth-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6), url(/image/final-fantasy.jpeg)
+        .sixth-card
+            @extend .carousel-cards-mobile
+            background-image: linear-gradient(#36333300, #000000b6), url(/image/kena.jpg)
+    .carousel-buttons
+        position: absolute
+        bottom: 15px
+        left: 0
+        display: flex
+        gap: 10px
+        justify-content: center
+        width: 100%
+        .fa-circle
+            color: rgba(245, 245, 245, 0.384)
+            font-size: 5px

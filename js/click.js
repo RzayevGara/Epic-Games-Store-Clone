@@ -37,3 +37,28 @@ function openright(){
         document.body.style.overflow = 'visible';
     }
 }
+
+
+
+s=document.getElementById("carousel-swipe")
+
+    function firstbtn(){
+        s.style.left="0%"
+
+    }
+    function secondbtn(){
+        s.style.left="-100%"
+    }
+    function thirdbtn(){
+        s.style.left="-200%"
+    }
+    function fourthbtn(){
+        s.style.left="-300%"
+
+    }
+    function fifthbtn(){
+        s.style.left="-400%"
+    }
+    function sixthbtn(){
+        s.style.left="-500%"
+    }
