@@ -3,6 +3,10 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
   font-family: 'Jost', sans-serif;
 }
 
@@ -67,12 +71,140 @@ header .navbar .hamburger-menu {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 10px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 header .navbar .hamburger-menu .line {
   width: 35px;
   height: 2px;
   background-color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.right-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 340px;
+  height: 93.2vh;
+  background-color: #2a2a2a;
+  position: fixed;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.right-bar ul li {
+  padding: 8px 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-bar ul li a {
+  color: #E7E7E7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.right-bar div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right-bar div .sign-lang {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 50px;
+}
+
+.right-bar div .sign-lang .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 30px;
+  width: 65%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-bar div .sign-lang .sign i {
+  color: #ccc;
+  font-size: 25px;
+}
+
+.right-bar div .sign-lang .sign p {
+  color: #E7E7E7;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.right-bar div .sign-lang .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 35%;
+}
+
+.right-bar div .sign-lang .lang i {
+  color: #ccc;
+  font-size: 25px;
+}
+
+.right-bar div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0078f2;
+  height: 55px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .search-bar {
@@ -125,7 +257,7 @@ header .navbar .hamburger-menu .line {
 
 .discover-menu {
   height: 235px;
-  background-color: #0078f2;
+  background-color: #121212;
   position: -webkit-sticky;
   position: sticky;
   top: 80px;
@@ -154,10 +286,30 @@ header .navbar .hamburger-menu .line {
 }
 
 .discover-menu ul li:not(:last-child) {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 }
 
 .discover-menu ul li a {
   color: white;
+}
+
+.carousel {
+  margin-top: 20px;
+  height: 475px;
+  background-color: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 15px;
+}
+
+.carousel .cards {
+  width: 330px;
+  height: 440px;
+  border-radius: 16px;
+  background-image: url(/image/gow.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=index-style.css.map */

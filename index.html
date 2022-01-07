@@ -11,17 +11,37 @@
     <link rel="stylesheet" href="sass/index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
+<body id="stop-scroll">
     <header>
         <div class="navbar">
             <img src="image/epic logo.png" alt="">
-            <div class="hamburger-menu">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+            <div class="hamburger-menu" id="x-menu" onclick="openright()">
+                <div class="line" id="tr-right"></div>
+                <div class="line" id="hide"></div>
+                <div class="line" id="tr-left"></div>
             </div>
         </div>
     </header>
+    <div class="right-bar" id="myRightbar" style="right: -100%">
+        <ul>
+            <li><a href="#">STORE</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">HELP</a></li>
+            <li><a href="#">UNREAL ENGINE</a></li>
+        </ul>
+        <div>
+            <div class="sign-lang">
+                <div class="sign">
+                    <i class="fas fa-user"></i>
+                    <p>SIGN IN</p>
+                </div>
+                <div class="lang">
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+            <a href="#">Available on pc/mac only</a>
+        </div>
+    </div>
     <div class="search-bar">
         <i class="fas fa-search"></i>
         <div onclick="myFunction()">
@@ -35,6 +55,12 @@
             <li><a href="#">Browse</a></li>
             <li><a href="#">News</a></li>
         </ul>
+    </div>
+    <div class="carousel">
+        <div class="cards"></div>
+        <div class="cards"></div>
+        <div class="cards"></div>
+
     </div>
     <script src="js/click.js"></script>
 </body>

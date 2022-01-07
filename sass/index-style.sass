@@ -6,6 +6,7 @@ body
     overflow-y: scroll
     height: 2000px
 
+
 // body
 //     &::before
 //         content: ""
@@ -34,10 +35,82 @@ header
             align-items: center
             justify-content: space-evenly
             padding: 10px 0
+            transition: 0.3s
             .line
                 width: 35px
                 height: 2px
                 background-color: white
+                transition: 0.3s
+
+.right-bar
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 340px
+    height: 93.2vh
+    background-color: $grey
+    position: fixed
+    z-index: 1
+    transition: 0.3s
+    ul
+        li
+            padding: 8px 28px
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+            a
+                color: #E7E7E7
+                font-family: $opensans
+                font-weight: 400
+                font-size: 13px
+                letter-spacing: 2px
+    div
+        display: flex
+        flex-direction: column
+        .sign-lang
+            border-top: 1px solid rgba(255, 255, 255, 0.1)
+            display: flex
+            flex-direction: row
+            height: 50px 
+            .sign
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: center
+                grid-gap: 30px
+                width: 65%
+                border-right: 1px solid rgba(255, 255, 255, 0.1)
+
+                i
+                    color: #ccc
+                    font-size: 25px
+                p
+                    color: #E7E7E7
+                    font-family: $opensans
+                    font-weight: 500
+                    font-size: 9px
+                    letter-spacing: 1px
+            .lang
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 35%
+                i
+                    color: #ccc
+                    font-size: 25px
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: $blue
+            height: 55px
+            text-transform: uppercase
+            color: white
+            font-family: $opensans
+            font-size: 10px
+            letter-spacing: 1px
+
+
+            
+
 .search-bar
     display: flex
     align-items: center
@@ -66,7 +139,7 @@ header
 
 .discover-menu
     height: 235px
-    background-color: $blue
+    background-color: $black
     position: sticky
     top: 80px
     padding: 27px 12px
@@ -78,9 +151,21 @@ header
         justify-content: space-around
         li
             &:not(:last-child)
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+                border-bottom: 1px solid rgba(255, 255, 255, 0.103)
             padding-bottom: 20px
             font-size: 14px
             a
                 color: white
 
+.carousel
+    margin-top: 20px
+    height: 475px
+    background-color: $grey
+    display: flex
+    padding-left: 15px
+    .cards
+        @include carousel-cards-mobile
+        background-image: url(/image/gow.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
