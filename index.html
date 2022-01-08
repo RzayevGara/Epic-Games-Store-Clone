@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Epic Games Store</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -115,6 +116,60 @@
             <i class="fas fa-circle" id="active-sixth" onclick="sixthbtn()"></i>
         </div>
     </div>
-    <script src="js/click.js"></script>
+    <div class="game-sale">
+        <div class="text-button">
+            <h6>Games On Sale</h6>
+            <a href="#">see all deals</a>
+        </div>
+        <div class="sale-carousel">
+            <div class="voidtrain-sale">
+                <img src="image/voidtrain.jpeg" alt="">
+                <p>Voidtrain</p>
+                <div>
+                    <a href="#">-20%</a>
+                    <p class="sale-price">$15.99</p>
+                    <p>$12.79</p>
+                </div>
+            </div>
+            <div class="dead-cells-sale">
+                <img src="image/deadcells.jpg" alt="">
+                <p>Dead Cells</p>
+                <div>
+                    <a href="#">-50%</a>
+                    <p class="sale-price">$12.99</p>
+                    <p>$6.49</p>
+                </div>
+            </div>
+            <div class="warshmallows-sale">
+                <img src="image/warsmallows.jpeg" alt="">
+                <p>Warshmallows</p>
+                <div>
+                    <a href="#">-70%</a>
+                    <p class="sale-price">$4.99</p>
+                    <p>$1.49</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+              <img src="image/riders.jpg" alt="">
+              <h5>Riders Republic Winter Bash</h5>
+              <p>Riders Republic Winter Bash Season is in full swing! Check out a re-skinned Ridge, new challenges, races and events.</p>
+              <p class="price">$39.99</p>
+          </div>
+          <div class="swiper-slide">
+            <img src="image/darkest.jpeg" alt="">
+            <h5>Darkest Dungeon II - Now available!</h5>
+            <p>Experience gripping turn-based combat and unforgettable art in this challenging RPG.</p>
+            <p class="price">$15.99</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="js/click.js"></script>
+      
 </body>
 </html>

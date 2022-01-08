@@ -8,6 +8,7 @@
 body {
   background-color: #121212;
   font-family: 'Jost', sans-serif;
+  color: #F5F5F5;
 }
 
 li {
@@ -65,6 +66,42 @@ a {
 
 .carousel-cards-mobile .detail .price, .carousel .carousel-div .first-card .detail .price, .carousel .carousel-div .second-card .detail .price, .carousel .carousel-div .third-card .detail .price, .carousel .carousel-div .fourth-card .detail .price, .carousel .carousel-div .fifth-card .detail .price, .carousel .carousel-div .sixth-card .detail .price {
   font-size: 17px;
+}
+
+.sale-cards-size, .game-sale .sale-carousel .voidtrain-sale, .game-sale .sale-carousel .dead-cells-sale, .game-sale .sale-carousel .warshmallows-sale {
+  width: 305px;
+  height: 235px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sale-cards-size img, .game-sale .sale-carousel .voidtrain-sale img, .game-sale .sale-carousel .dead-cells-sale img, .game-sale .sale-carousel .warshmallows-sale img {
+  height: 170px;
+  border-radius: 5px;
+}
+
+.sale-box, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
+  background-color: #0078f2;
+  padding: 5px 10px;
+  color: #F5F5F5;
+  width: 45px;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
 }
 
 body {
@@ -147,7 +184,7 @@ header .navbar .hamburger-menu .line {
   height: 93.2vh;
   background-color: #2a2a2a;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -273,6 +310,7 @@ header .navbar .hamburger-menu .line {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9;
 }
 
 .search-bar .fa-search {
@@ -314,6 +352,7 @@ header .navbar .hamburger-menu .line {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 9;
 }
 
 .discover-menu ul {
@@ -345,7 +384,6 @@ header .navbar .hamburger-menu .line {
 .carousel {
   margin-top: 20px;
   height: 475px;
-  background-color: #2a2a2a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,5 +450,127 @@ header .navbar .hamburger-menu .line {
 .carousel .carousel-buttons .fa-circle {
   color: rgba(245, 245, 245, 0.384);
   font-size: 5px;
+}
+
+.game-sale {
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  margin-top: 50px;
+}
+
+.game-sale .text-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.game-sale .text-button h6 {
+  color: #F5F5F5;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.game-sale .text-button a {
+  padding: 5px 15px;
+  font-size: 12px;
+  color: #F5F5F5;
+  text-transform: uppercase;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #F5F5F5;
+  border-radius: 4px;
+  letter-spacing: 0.8px;
+}
+
+.game-sale .sale-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  overflow: scroll;
+  padding-bottom: 50px;
+}
+
+.game-sale .sale-carousel .voidtrain-sale div, .game-sale .sale-carousel .dead-cells-sale div, .game-sale .sale-carousel .warshmallows-sale div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-sale .sale-carousel .voidtrain-sale div p, .game-sale .sale-carousel .dead-cells-sale div p, .game-sale .sale-carousel .warshmallows-sale div p {
+  font-size: 12px;
+}
+
+.game-sale .sale-carousel .voidtrain-sale div .sale-price, .game-sale .sale-carousel .dead-cells-sale div .sale-price, .game-sale .sale-carousel .warshmallows-sale div .sale-price {
+  color: #F5F5F599;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  height: 400px;
+  width: 328px;
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-right: 0 !important;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  height: 176px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.swiper .swiper-wrapper .swiper-slide h5 {
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.swiper .swiper-wrapper .swiper-slide p {
+  padding-left: 10px;
+}
+
+.swiper .swiper-wrapper .swiper-slide p:not(:last-child) {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #F5F5F599;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  color: #F5F5F5;
+  opacity: 1;
+  background: rgba(245, 245, 245, 0.384);
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: whitesmoke;
 }
 /*# sourceMappingURL=index-style.css.map */

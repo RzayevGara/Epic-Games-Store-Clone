@@ -5,6 +5,7 @@
 body
     overflow-y: scroll
     height: 2000px
+    
 
 
 // body
@@ -50,7 +51,7 @@ header
     height: 93.2vh
     background-color: $grey
     position: fixed
-    z-index: 1
+    z-index: 10
     transition: 0.3s
     ul
         li
@@ -108,9 +109,6 @@ header
             font-size: 10px
             letter-spacing: 1px
 
-
-            
-
 .search-bar
     display: flex
     align-items: center
@@ -121,6 +119,7 @@ header
     color: white
     position: sticky
     top: 0
+    z-index: 9
     .fa-search
         color: grey
         font-size: 18px
@@ -144,6 +143,7 @@ header
     top: 80px
     padding: 27px 12px
     justify-content: center
+    z-index: 9
     ul
         display: flex
         width: 90%
@@ -160,7 +160,6 @@ header
 .carousel
     margin-top: 20px
     height: 475px
-    background-color: $grey
     display: flex
     padding: 0 15px
     overflow: hidden
@@ -200,3 +199,85 @@ header
         .fa-circle
             color: rgba(245, 245, 245, 0.384)
             font-size: 5px
+
+.game-sale
+    height: 330px
+    display: flex
+    flex-direction: column
+    padding: 0 15px
+    margin-top: 50px
+    .text-button
+        display: flex
+        justify-content: space-between
+        margin-bottom: 15px
+        h6
+            color: $fontcolor
+            font-size: 18px
+            font-weight: 400
+        a
+            padding: 5px 15px
+            font-size: 12px
+            color: $fontcolor
+            text-transform: uppercase
+            display: inline-flex
+            align-items: center
+            border: 1px solid $fontcolor
+            border-radius: 4px
+            letter-spacing: 0.8px
+    .sale-carousel
+        display: flex
+        gap: 20px
+        overflow: scroll
+        padding-bottom: 50px
+        .voidtrain-sale
+            @extend .sale-cards-size
+            div
+                display: flex
+                gap: 10px
+                align-items: center
+                a
+                    @extend .sale-box
+                p
+                    font-size: 12px
+                .sale-price
+                    color: #F5F5F599
+                    text-decoration-line: line-through
+        .dead-cells-sale
+            @extend .voidtrain-sale
+        .warshmallows-sale
+            @extend .voidtrain-sale
+
+.swiper
+    width: 100%
+    .swiper-wrapper
+        .swiper-slide 
+            height: 400px
+            width: 328px
+            padding-left: 15px
+            margin-top: 40px
+            margin-right: 0 !important
+            img 
+                display: block
+                height: 176px
+                border-radius: 20px
+                margin-bottom: 15px
+            h5
+                padding-left: 10px
+                font-size: 18px
+                font-weight: 400
+                margin-bottom: 15px
+            p
+                padding-left: 10px
+                &:not(:last-child)
+                    margin-bottom: 20px
+                    font-size: 15px
+                    color: #F5F5F599
+    .swiper-pagination-bullet
+        width: 6px
+        height: 6px
+        color: #F5F5F5
+        opacity: 1
+        background: rgba(245, 245, 245, 0.384)
+    .swiper-pagination-bullet-active
+        background: rgb(245, 245, 245)
+      
