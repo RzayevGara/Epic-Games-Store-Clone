@@ -57,9 +57,9 @@
             <li><a href="#">News</a></li>
         </ul>
     </div>
-    <div class="carousel">
-        <div class="carousel-div" id="carousel-swipe">
-            <div class="first-card">
+    <div class="swiper mySwipe">
+        <div class="swiper-wrapper cc">
+            <div class="swiper-slide first-card">
                 <div class="detail">
                     <p class="coming-date">Coming January 14, 2022</p>
                     <p class="game-info">Last chance to Pre-purchase. Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
@@ -67,7 +67,7 @@
                     <p class="price">$39.99</p>
                 </div>
             </div>
-            <div class="second-card">
+            <div class="swiper-slide second-card">
                 <div class="detail">
                     <p class="coming-date">Out Now</p>
                     <p class="game-info">A battle royale for fighting game fans by parkour with an array of ranged and melee weapons to choose from!</p>
@@ -75,14 +75,14 @@
                     <p class="price">$19.99</p>
                 </div>
             </div>
-            <div class="third-card">
+            <div class="swiper-slide third-card">
                 <div class="detail">
                     <p class="coming-date">New Update Available</p>
                     <p class="game-info">The latest update features Liyue's biggest festival Lantern Rite, more characters, and a new area shrouded in secret, Enkanomiya!</p>
                     <p class="price">Free</p>
                 </div>
             </div>
-            <div class="fourth-card">
+            <div class="swiper-slide fourth-card">
                 <div class="detail">
                     <p class="coming-date">Out January 20</p>
                     <p class="game-info">Releases January 20 with a new lower price, exclusive bonus content for Siege players, and more!</p>
@@ -90,7 +90,7 @@
                     <p class="price">$22.00</p>
                 </div>
             </div>
-            <div class="fifth-card">
+            <div class="swiper-slide fifth-card">
                 <div class="detail">
                     <p class="coming-date">Epic Games Store PC Exclusive</p>
                     <p class="game-info">The timeless classic FINAL FANTASY® VII REMAKE INTERGRADE is reborn with a new battle system and adventure.</p>
@@ -98,7 +98,7 @@
                     <p class="price">$69.99</p>
                 </div>
             </div>
-            <div class="sixth-card">
+            <div class="swiper-slide sixth-card">
                 <div class="detail">
                     <p class="coming-date">Out Now</p>
                     <p class="game-info">Immerse yourself in a charming world filled with fast-paced combat. Find the Rot and make amazing discoveries!</p>
@@ -107,15 +107,10 @@
                 </div>
             </div>
         </div>
-        <div class="carousel-buttons">
-            <i class="fas fa-circle" id="active-first" onclick="firstbtn()"></i>
-            <i class="fas fa-circle" id="active-second" onclick="secondbtn()"></i>
-            <i class="fas fa-circle" id="active-third" onclick="thirdbtn()"></i>
-            <i class="fas fa-circle" id="active-fourth" onclick="fourthbtn()"></i>
-            <i class="fas fa-circle" id="active-fifth" onclick="fifthbtn()"></i>
-            <i class="fas fa-circle" id="active-sixth" onclick="sixthbtn()"></i>
-        </div>
+        <div class="swiper-pagination"></div>
     </div>
+
+
     <div class="game-sale">
         <div class="text-button">
             <h6>Games On Sale</h6>
@@ -153,13 +148,13 @@
     </div>
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-second">
               <img src="image/riders.jpg" alt="">
               <h5>Riders Republic Winter Bash</h5>
               <p>Riders Republic Winter Bash Season is in full swing! Check out a re-skinned Ridge, new challenges, races and events.</p>
               <p class="price">$39.99</p>
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide swiper-second">
             <img src="image/darkest.jpeg" alt="">
             <h5>Darkest Dungeon II - Now available!</h5>
             <p>Experience gripping turn-based combat and unforgettable art in this challenging RPG.</p>
