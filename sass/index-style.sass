@@ -27,6 +27,7 @@ header
         padding-left: 15px
         img
             width: 30px
+            z-index: 11
         .hamburger-menu
             width: 55px
             height: 55px
@@ -37,6 +38,7 @@ header
             justify-content: space-evenly
             padding: 10px 0
             transition: 0.3s
+            z-index: 11
             .line
                 width: 35px
                 height: 2px
@@ -48,12 +50,14 @@ header
     flex-direction: column
     justify-content: space-between
     width: 340px
-    height: 93.2vh
+    height: 100vh
     background-color: $grey
     position: fixed
     z-index: 10
     transition: 0.3s
+    top: 0
     ul
+        margin-top: 55px
         li
             padding: 8px 28px
             border-bottom: 1px solid rgba(255, 255, 255, 0.1)

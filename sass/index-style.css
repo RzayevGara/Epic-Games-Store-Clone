@@ -137,6 +137,7 @@ header .navbar {
 
 header .navbar img {
   width: 30px;
+  z-index: 11;
 }
 
 header .navbar .hamburger-menu {
@@ -159,6 +160,7 @@ header .navbar .hamburger-menu {
   padding: 10px 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  z-index: 11;
 }
 
 header .navbar .hamburger-menu .line {
@@ -181,12 +183,17 @@ header .navbar .hamburger-menu .line {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 340px;
-  height: 93.2vh;
+  height: 100vh;
   background-color: #2a2a2a;
   position: fixed;
   z-index: 10;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  top: 0;
+}
+
+.right-bar ul {
+  margin-top: 55px;
 }
 
 .right-bar ul li {
