@@ -67,7 +67,7 @@
   border-radius: 5px;
 }
 
-.sale-box {
+.sale-box, .new-release-card .game-detail div .p-sale-button {
   background-color: #0078f2;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -83,7 +83,7 @@
   letter-spacing: 0.6px;
 }
 
-.more-button {
+.more-button, .text-button a {
   padding: 5px 15px;
   font-size: 12px;
   color: #F5F5F5;
@@ -101,7 +101,7 @@
 
 .free-cards-size {
   width: 315px;
-  height: 270px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,11 +115,130 @@
 }
 
 .free-cards-size .image-free {
+  position: relative;
   width: 305px;
   height: 195px;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 5px;
+}
+
+.free-cards-size .image-free p {
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  background-color: #0078f2;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.text-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.text-button .icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-button .icon-text .fa-gift {
+  font-size: 30px;
+}
+
+.text-button .icon-text h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text-button a {
+  font-weight: 500;
+  font-size: 10px;
+  padding: 8px 15px;
+}
+
+.new-release-card {
+  width: 235px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+.new-release-card img {
+  width: 48px;
+  border-radius: 3px;
+}
+
+.new-release-card .game-detail h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.new-release-card .game-detail .new-epic-button {
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  color: #F5F5F5;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.new-release-card .game-detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.new-release-card .game-detail div p {
+  font-size: 12px;
+}
+
+.new-release-card .game-detail div .sale-price {
+  color: #F5F5F599;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.new-release-card .game-detail div .grey-text {
+  color: #F5F5F599;
 }
 /*# sourceMappingURL=cards.css.map */

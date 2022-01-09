@@ -149,7 +149,7 @@ header
             a
                 color: white
 
-.mySwipe
+.first-swipe
     height: 480px
     .swiper-wrapper
         .first-card
@@ -259,21 +259,7 @@ header
     background-color: $grey
     padding: 30px 15px
     .free-text-button
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 25px
-        .icon-text
-            display: flex
-            gap: 20px
-            align-items: center
-            .fa-gift
-                font-size: 30px
-            h6
-                font-size: 18px
-                font-weight: 400
-        a
-            @extend .more-button
+        @extend .text-button
     .free-game-list
         display: flex
         gap: 20px
@@ -300,3 +286,20 @@ header
                     font-size: 14px
                 .free-text
                     color: #F5F5F599
+
+
+.third-swipe
+    margin-top: 50px
+    height: 650px
+    .swiper-third
+        width: 300px
+        height: 600px
+        padding: 0  15px
+        &:not(:first-child)
+            border-left: 1px solid $grey
+        &:last-child
+            margin-right: 60px
+        .free-text-button
+            @extend .text-button
+        .car-tuning
+            @extend .new-release-card

@@ -19,7 +19,7 @@ a {
   text-decoration: none;
 }
 
-.carousel-cards-mobile, .mySwipe .swiper-wrapper .first-card, .mySwipe .swiper-wrapper .second-card, .mySwipe .swiper-wrapper .third-card, .mySwipe .swiper-wrapper .fourth-card, .mySwipe .swiper-wrapper .fifth-card, .mySwipe .swiper-wrapper .sixth-card {
+.carousel-cards-mobile, .first-swipe .swiper-wrapper .first-card, .first-swipe .swiper-wrapper .second-card, .first-swipe .swiper-wrapper .third-card, .first-swipe .swiper-wrapper .fourth-card, .first-swipe .swiper-wrapper .fifth-card, .first-swipe .swiper-wrapper .sixth-card {
   width: 330px;
   height: 440px;
   border-radius: 16px;
@@ -34,7 +34,7 @@ a {
           align-items: flex-end;
 }
 
-.carousel-cards-mobile .detail, .mySwipe .swiper-wrapper .first-card .detail, .mySwipe .swiper-wrapper .second-card .detail, .mySwipe .swiper-wrapper .third-card .detail, .mySwipe .swiper-wrapper .fourth-card .detail, .mySwipe .swiper-wrapper .fifth-card .detail, .mySwipe .swiper-wrapper .sixth-card .detail {
+.carousel-cards-mobile .detail, .first-swipe .swiper-wrapper .first-card .detail, .first-swipe .swiper-wrapper .second-card .detail, .first-swipe .swiper-wrapper .third-card .detail, .first-swipe .swiper-wrapper .fourth-card .detail, .first-swipe .swiper-wrapper .fifth-card .detail, .first-swipe .swiper-wrapper .sixth-card .detail {
   height: 195px;
   width: 100%;
   padding: 10px 20px;
@@ -48,23 +48,23 @@ a {
   color: #f5f5f5;
 }
 
-.carousel-cards-mobile .detail .coming-date, .mySwipe .swiper-wrapper .first-card .detail .coming-date, .mySwipe .swiper-wrapper .second-card .detail .coming-date, .mySwipe .swiper-wrapper .third-card .detail .coming-date, .mySwipe .swiper-wrapper .fourth-card .detail .coming-date, .mySwipe .swiper-wrapper .fifth-card .detail .coming-date, .mySwipe .swiper-wrapper .sixth-card .detail .coming-date {
+.carousel-cards-mobile .detail .coming-date, .first-swipe .swiper-wrapper .first-card .detail .coming-date, .first-swipe .swiper-wrapper .second-card .detail .coming-date, .first-swipe .swiper-wrapper .third-card .detail .coming-date, .first-swipe .swiper-wrapper .fourth-card .detail .coming-date, .first-swipe .swiper-wrapper .fifth-card .detail .coming-date, .first-swipe .swiper-wrapper .sixth-card .detail .coming-date {
   font-size: 10px;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
-.carousel-cards-mobile .detail .game-info, .mySwipe .swiper-wrapper .first-card .detail .game-info, .mySwipe .swiper-wrapper .second-card .detail .game-info, .mySwipe .swiper-wrapper .third-card .detail .game-info, .mySwipe .swiper-wrapper .fourth-card .detail .game-info, .mySwipe .swiper-wrapper .fifth-card .detail .game-info, .mySwipe .swiper-wrapper .sixth-card .detail .game-info {
+.carousel-cards-mobile .detail .game-info, .first-swipe .swiper-wrapper .first-card .detail .game-info, .first-swipe .swiper-wrapper .second-card .detail .game-info, .first-swipe .swiper-wrapper .third-card .detail .game-info, .first-swipe .swiper-wrapper .fourth-card .detail .game-info, .first-swipe .swiper-wrapper .fifth-card .detail .game-info, .first-swipe .swiper-wrapper .sixth-card .detail .game-info {
   font-size: 16px;
   margin-bottom: 25px;
   line-height: 20px;
 }
 
-.carousel-cards-mobile .detail .start-price, .mySwipe .swiper-wrapper .first-card .detail .start-price, .mySwipe .swiper-wrapper .second-card .detail .start-price, .mySwipe .swiper-wrapper .third-card .detail .start-price, .mySwipe .swiper-wrapper .fourth-card .detail .start-price, .mySwipe .swiper-wrapper .fifth-card .detail .start-price, .mySwipe .swiper-wrapper .sixth-card .detail .start-price {
+.carousel-cards-mobile .detail .start-price, .first-swipe .swiper-wrapper .first-card .detail .start-price, .first-swipe .swiper-wrapper .second-card .detail .start-price, .first-swipe .swiper-wrapper .third-card .detail .start-price, .first-swipe .swiper-wrapper .fourth-card .detail .start-price, .first-swipe .swiper-wrapper .fifth-card .detail .start-price, .first-swipe .swiper-wrapper .sixth-card .detail .start-price {
   font-size: 15px;
 }
 
-.carousel-cards-mobile .detail .price, .mySwipe .swiper-wrapper .first-card .detail .price, .mySwipe .swiper-wrapper .second-card .detail .price, .mySwipe .swiper-wrapper .third-card .detail .price, .mySwipe .swiper-wrapper .fourth-card .detail .price, .mySwipe .swiper-wrapper .fifth-card .detail .price, .mySwipe .swiper-wrapper .sixth-card .detail .price {
+.carousel-cards-mobile .detail .price, .first-swipe .swiper-wrapper .first-card .detail .price, .first-swipe .swiper-wrapper .second-card .detail .price, .first-swipe .swiper-wrapper .third-card .detail .price, .first-swipe .swiper-wrapper .fourth-card .detail .price, .first-swipe .swiper-wrapper .fifth-card .detail .price, .first-swipe .swiper-wrapper .sixth-card .detail .price {
   font-size: 17px;
 }
 
@@ -88,7 +88,7 @@ a {
   border-radius: 5px;
 }
 
-.sale-box, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
+.sale-box, .new-release-card .game-detail div .p-sale-button, .third-swipe .swiper-third .car-tuning .game-detail div .p-sale-button, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
   background-color: #0078f2;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -104,7 +104,7 @@ a {
   letter-spacing: 0.6px;
 }
 
-.more-button, .game-sale .text-button a, .free-section .free-text-button a {
+.more-button, .text-button a, .free-section .free-text-button a, .third-swipe .swiper-third .free-text-button a, .game-sale .text-button a {
   padding: 5px 15px;
   font-size: 12px;
   color: #F5F5F5;
@@ -156,6 +156,111 @@ a {
   font-weight: 600;
   padding: 4px 0;
   border-radius: 0 0 5px 5px;
+}
+
+.text-button, .free-section .free-text-button, .third-swipe .swiper-third .free-text-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.text-button .icon-text, .free-section .free-text-button .icon-text, .third-swipe .swiper-third .free-text-button .icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-button .icon-text .fa-gift, .free-section .free-text-button .icon-text .fa-gift, .third-swipe .swiper-third .free-text-button .icon-text .fa-gift {
+  font-size: 30px;
+}
+
+.text-button .icon-text h6, .free-section .free-text-button .icon-text h6, .third-swipe .swiper-third .free-text-button .icon-text h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.text-button a, .free-section .free-text-button a, .third-swipe .swiper-third .free-text-button a {
+  font-weight: 500;
+  font-size: 10px;
+  padding: 8px 15px;
+}
+
+.new-release-card, .third-swipe .swiper-third .car-tuning {
+  width: 235px;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+.new-release-card img, .third-swipe .swiper-third .car-tuning img {
+  width: 48px;
+  border-radius: 3px;
+}
+
+.new-release-card .game-detail h6, .third-swipe .swiper-third .car-tuning .game-detail h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.new-release-card .game-detail .new-epic-button, .third-swipe .swiper-third .car-tuning .game-detail .new-epic-button {
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  color: #F5F5F5;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.new-release-card .game-detail div, .third-swipe .swiper-third .car-tuning .game-detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.new-release-card .game-detail div p, .third-swipe .swiper-third .car-tuning .game-detail div p {
+  font-size: 12px;
+}
+
+.new-release-card .game-detail div .sale-price, .third-swipe .swiper-third .car-tuning .game-detail div .sale-price {
+  color: #F5F5F599;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.new-release-card .game-detail div .grey-text, .third-swipe .swiper-third .car-tuning .game-detail div .grey-text {
+  color: #F5F5F599;
 }
 
 header {
@@ -437,41 +542,41 @@ header .navbar .hamburger-menu .line {
   color: white;
 }
 
-.mySwipe {
+.first-swipe {
   height: 480px;
 }
 
-.mySwipe .swiper-wrapper .first-card {
+.first-swipe .swiper-wrapper .first-card {
   margin-right: 15px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/gow.jpg");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/gow.jpg");
 }
 
-.mySwipe .swiper-wrapper .second-card {
+.first-swipe .swiper-wrapper .second-card {
   margin-right: 15px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/naraka.jpeg");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/naraka.jpeg");
 }
 
-.mySwipe .swiper-wrapper .third-card {
+.first-swipe .swiper-wrapper .third-card {
   margin-right: 15px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/genshin.jpeg");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/genshin.jpeg");
 }
 
-.mySwipe .swiper-wrapper .fourth-card {
+.first-swipe .swiper-wrapper .fourth-card {
   margin-right: 15px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/r6.png");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/r6.png");
 }
 
-.mySwipe .swiper-wrapper .fifth-card {
+.first-swipe .swiper-wrapper .fifth-card {
   margin-right: 15px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/final-fantasy.jpeg");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/final-fantasy.jpeg");
 }
 
-.mySwipe .swiper-wrapper .sixth-card {
+.first-swipe .swiper-wrapper .sixth-card {
   margin-right: 10px !important;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#36333300), to(#000000b6)), url("../image/kena.jpg");
   background-image: linear-gradient(#36333300, #000000b6), url("../image/kena.jpg");
@@ -490,7 +595,7 @@ header .navbar .hamburger-menu .line {
   margin-top: 50px;
 }
 
-.game-sale .text-button {
+.game-sale .text-button, .game-sale .free-section .free-text-button, .free-section .game-sale .free-text-button, .game-sale .third-swipe .swiper-third .free-text-button, .third-swipe .swiper-third .game-sale .free-text-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +605,7 @@ header .navbar .hamburger-menu .line {
   margin-bottom: 15px;
 }
 
-.game-sale .text-button h6 {
+.game-sale .text-button h6, .game-sale .free-section .free-text-button h6, .free-section .game-sale .free-text-button h6, .game-sale .third-swipe .swiper-third .free-text-button h6, .third-swipe .swiper-third .game-sale .free-text-button h6 {
   color: #F5F5F5;
   font-size: 18px;
   font-weight: 400;
@@ -592,38 +697,6 @@ header .navbar .hamburger-menu .line {
   padding: 30px 15px;
 }
 
-.free-section .free-text-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 25px;
-}
-
-.free-section .free-text-button .icon-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.free-section .free-text-button .icon-text .fa-gift {
-  font-size: 30px;
-}
-
-.free-section .free-text-button .icon-text h6 {
-  font-size: 18px;
-  font-weight: 400;
-}
-
 .free-section .free-game-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,5 +733,24 @@ header .navbar .hamburger-menu .line {
 
 .free-section .free-game-list .galactic-civ-sale div .free-text {
   color: #F5F5F599;
+}
+
+.third-swipe {
+  margin-top: 50px;
+  height: 650px;
+}
+
+.third-swipe .swiper-third {
+  width: 300px;
+  height: 600px;
+  padding: 0  15px;
+}
+
+.third-swipe .swiper-third:not(:first-child) {
+  border-left: 1px solid #2a2a2a;
+}
+
+.third-swipe .swiper-third:last-child {
+  margin-right: 60px;
 }
 /*# sourceMappingURL=index-style.css.map */

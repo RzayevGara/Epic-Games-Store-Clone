@@ -38,83 +38,29 @@ function openright(){
     }
 }
 
+var swiper = new Swiper(".first-swipe", {
+  slidesPerView: "auto",
+  spaceBetween: 1,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
+var swiper = new Swiper(".second-swipe", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-// s=document.getElementById("carousel-swipe")
-
-//     function firstbtn(){
-//         s.style.left="0%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245, 0.384)"
-//     }
-//     function secondbtn(){
-//         s.style.left="-100%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245, 0.384)"
-//     }
-//     function thirdbtn(){
-//         s.style.left="-200%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245, 0.384)"
-//     }
-//     function fourthbtn(){
-//         s.style.left="-300%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245, 0.384)"
-//     }
-//     function fifthbtn(){
-//         s.style.left="-400%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245, 0.384)"
-//     }
-//     function sixthbtn(){
-//         s.style.left="-500%"
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-second").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-third").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fourth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-fifth").style.color="rgba(245, 245, 245, 0.384)"
-//         document.getElementById("active-sixth").style.color="rgba(245, 245, 245)"
-//     }
-
-//     if(s.style.left="0%"){
-//         document.getElementById("active-first").style.color="rgba(245, 245, 245)"
-//     }
-
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-
-      var swiper = new Swiper(".mySwipe", {
-        slidesPerView: "auto",
-        spaceBetween: 1,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
+var swiper = new Swiper(".third-swipe", {
+  slidesPerView: "auto",
+  spaceBetween: 6,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
