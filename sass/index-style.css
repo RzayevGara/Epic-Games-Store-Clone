@@ -832,4 +832,46 @@ header .navbar .hamburger-menu .line {
 .fourth-swipe .swiper-fourth:last-child {
   margin-right: 10px;
 }
+
+.browse-sec {
+  margin-top: 50px;
+  width: 375px;
+  height: 310px;
+  padding: 0 15px;
+}
+
+.browse-sec .img-sec {
+  width: 345px;
+  height: 190px;
+  background: black -webkit-gradient(linear, left top, right bottom, from(black), to(#0078f2));
+  background: black linear-gradient(to right bottom, black, #0078f2);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 7px;
+}
+
+.browse-sec .img-sec img {
+  width: 100%;
+}
+
+.browse-sec h4 {
+  padding: 20px 0 0 40px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.browse-sec p {
+  font-size: 14px;
+  color: #F5F5F599;
+  padding: 10px 0 0 40px;
+  width: 90%;
+}
 /*# sourceMappingURL=index-style.css.map */
