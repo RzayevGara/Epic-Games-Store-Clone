@@ -67,7 +67,7 @@
   border-radius: 5px;
 }
 
-.sale-box, .new-release-card .game-detail div .p-sale-button {
+.sale-box, .new-release-card .game-detail div .p-sale-button, .default-card-size .game-detail div .p-sale-button {
   background-color: #0078f2;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -239,6 +239,70 @@
 }
 
 .new-release-card .game-detail div .grey-text {
+  color: #F5F5F599;
+}
+
+.default-card-size {
+  margin-top: 20px;
+  width: 215px;
+  height: 350px;
+}
+
+.default-card-size img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.default-card-size .game-detail {
+  margin-top: 10px;
+  padding-left: 3px;
+}
+
+.default-card-size .game-detail h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.default-card-size .game-detail .new-epic-button {
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  color: #F5F5F5;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.default-card-size .game-detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.default-card-size .game-detail div p {
+  font-size: 12px;
+}
+
+.default-card-size .game-detail div .sale-price {
+  color: #F5F5F599;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.default-card-size .game-detail div .grey-text {
   color: #F5F5F599;
 }
 /*# sourceMappingURL=cards.css.map */

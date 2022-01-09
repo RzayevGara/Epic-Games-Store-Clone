@@ -88,7 +88,7 @@ a {
   border-radius: 5px;
 }
 
-.sale-box, .new-release-card .game-detail div .p-sale-button, .third-swipe .swiper-third .car-tuning .game-detail div .p-sale-button, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
+.sale-box, .new-release-card .game-detail div .p-sale-button, .third-swipe .swiper-third .car-tuning .game-detail div .p-sale-button, .default-card-size .game-detail div .p-sale-button, .fourth-swipe .swiper-fourth .game-detail div .p-sale-button, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
   background-color: #0078f2;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -260,6 +260,70 @@ a {
 }
 
 .new-release-card .game-detail div .grey-text, .third-swipe .swiper-third .car-tuning .game-detail div .grey-text {
+  color: #F5F5F599;
+}
+
+.default-card-size, .fourth-swipe .swiper-fourth {
+  margin-top: 20px;
+  width: 215px;
+  height: 350px;
+}
+
+.default-card-size img, .fourth-swipe .swiper-fourth img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.default-card-size .game-detail, .fourth-swipe .swiper-fourth .game-detail {
+  margin-top: 10px;
+  padding-left: 3px;
+}
+
+.default-card-size .game-detail h6, .fourth-swipe .swiper-fourth .game-detail h6 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 4px;
+}
+
+.default-card-size .game-detail .new-epic-button, .fourth-swipe .swiper-fourth .game-detail .new-epic-button {
+  background-color: #2a2a2a;
+  padding: 5px 10px;
+  color: #F5F5F5;
+  font-size: 10px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.default-card-size .game-detail div, .fourth-swipe .swiper-fourth .game-detail div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.default-card-size .game-detail div p, .fourth-swipe .swiper-fourth .game-detail div p {
+  font-size: 12px;
+}
+
+.default-card-size .game-detail div .sale-price, .fourth-swipe .swiper-fourth .game-detail div .sale-price {
+  color: #F5F5F599;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
+.default-card-size .game-detail div .grey-text, .fourth-swipe .swiper-fourth .game-detail div .grey-text {
   color: #F5F5F599;
 }
 
@@ -752,5 +816,20 @@ header .navbar .hamburger-menu .line {
 
 .third-swipe .swiper-third:last-child {
   margin-right: 60px;
+}
+
+.rec-text {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+
+.fourth-swipe {
+  margin-top: 50px;
+  height: 400px;
+}
+
+.fourth-swipe .swiper-fourth:last-child {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=index-style.css.map */

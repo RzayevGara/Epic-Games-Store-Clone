@@ -64,3 +64,12 @@ var swiper = new Swiper(".third-swipe", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".fourth-swipe", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
