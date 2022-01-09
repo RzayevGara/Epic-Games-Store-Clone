@@ -122,7 +122,7 @@ a {
 
 .free-cards-size, .free-section .free-game-list .gods-fall-sale, .free-section .free-game-list .galactic-civ-sale {
   width: 315px;
-  height: 270px;
+  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -631,7 +631,7 @@ header .navbar .hamburger-menu .line {
   gap: 20px;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .free-section .free-game-list .gods-fall-sale .image-free {
