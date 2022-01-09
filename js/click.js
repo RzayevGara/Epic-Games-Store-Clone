@@ -73,3 +73,10 @@ var swiper = new Swiper(".fourth-swipe", {
     clickable: true,
   },
 });
+
+// f=document.getElementById("foot")
+// z=document.getElementsByClassName("search-bar")
+// s=document.getElementById("stop-scroll")
+// if(f.style.height="100vh"){
+//   z.style.position="static"
+// }
