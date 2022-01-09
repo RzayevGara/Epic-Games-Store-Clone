@@ -2,6 +2,9 @@
 @import reset.sass
 @import cards.sass
 
+html
+    scroll-behavior: smooth
+
 header
     display: flex
     flex-direction: column
@@ -317,7 +320,7 @@ header
             margin-right: 10px
 
 .browse-sec
-    margin-top: 50px
+    margin: 80px 0
     width: 100%
     height: 310px
     padding: 0 15px
@@ -348,3 +351,83 @@ footer
     background-color: $grey
     z-index: 20
     position: sticky
+    padding: 0 25px
+    margin-top: 50px
+    .icons
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 20px
+        .social-icons
+            display: flex
+            gap: 10px
+            a
+                color: $fontcolor
+                font-size: 25px
+        #scroll
+            color: $fontcolor
+            font-size: 25px
+            i
+                border: 1px solid $fontcolor
+                padding: 2px 5px
+    .resources-madeby
+        margin-top: 15px
+        display: flex
+        flex-direction: column
+        border-bottom: 1px solid #a0a0a063
+        padding-bottom: 30px
+        .resources
+            padding-top: 25px
+            display: flex
+            flex-wrap: wrap
+            gap: 25px
+            position: relative
+            p
+                position: absolute
+                top: 0
+                font-size: 16px
+                color: #a0a0a0
+            ul
+                li
+                    font-size: 15px
+        .madeby
+            margin-top: 30px
+            padding-top: 25px
+            display: flex
+            flex-wrap: wrap
+            gap: 25px
+            position: relative
+            p
+                position: absolute
+                top: 0
+                font-size: 16px
+                color: #a0a0a0
+            ul
+                li
+                    font-size: 15px
+    .epic-text
+        font-size: 12px
+        margin-top: 25px
+        color: #ccc
+        letter-spacing: 0.7px
+        line-height: 23px
+    .terms-logo
+        display: flex
+        flex-direction: column
+        margin-top: 25px
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+            li
+                font-size: 14px
+        .epic-logo
+            margin-top: 20px
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 15px
+            .epic-f-logo
+                width: 20px
+            .unreal-f-logo
+                width: 24px
