@@ -2,18 +2,6 @@
 @import reset.sass
 @import cards.sass
 
-body
-    overflow-y: scroll
-    height: 2000px
-    
-
-
-// body
-//     &::before
-//         content: ""
-//         display: block
-//         margin-top: 4rem
- 
 header
     display: flex
     flex-direction: column
@@ -161,32 +149,33 @@ header
             a
                 color: white
 
-
-.swiper-wrapper
-    .first-card
-        @extend .carousel-cards-mobile
-        margin-right: 15px !important
-        background-image: linear-gradient(#36333300, #000000b6),url('../image/gow.jpg')
-    .second-card
-        @extend .carousel-cards-mobile
-        margin-right: 15px !important
-        background-image: linear-gradient(#36333300, #000000b6), url('../image/naraka.jpeg')
-    .third-card
-        @extend .carousel-cards-mobile
-        margin-right: 15px !important
-        background-image: linear-gradient(#36333300, #000000b6), url('../image/genshin.jpeg')
-    .fourth-card
-        @extend .carousel-cards-mobile
-        margin-right: 15px !important
-        background-image: linear-gradient(#36333300, #000000b6), url('../image/r6.png')
-    .fifth-card
-        @extend .carousel-cards-mobile
-        margin-right: 15px !important
-        background-image: linear-gradient(#36333300, #000000b6), url('../image/final-fantasy.jpeg')
-    .sixth-card
-        @extend .carousel-cards-mobile
-        margin-right: 10px !important
-        background-image: linear-gradient(#36333300, #000000b6), url('../image/kena.jpg')
+.mySwipe
+    height: 480px
+    .swiper-wrapper
+        .first-card
+            @extend .carousel-cards-mobile
+            margin-right: 15px !important
+            background-image: linear-gradient(#36333300, #000000b6),url('../image/gow.jpg')
+        .second-card
+            @extend .carousel-cards-mobile
+            margin-right: 15px !important
+            background-image: linear-gradient(#36333300, #000000b6), url('../image/naraka.jpeg')
+        .third-card
+            @extend .carousel-cards-mobile
+            margin-right: 15px !important
+            background-image: linear-gradient(#36333300, #000000b6), url('../image/genshin.jpeg')
+        .fourth-card
+            @extend .carousel-cards-mobile
+            margin-right: 15px !important
+            background-image: linear-gradient(#36333300, #000000b6), url('../image/r6.png')
+        .fifth-card
+            @extend .carousel-cards-mobile
+            margin-right: 15px !important
+            background-image: linear-gradient(#36333300, #000000b6), url('../image/final-fantasy.jpeg')
+        .sixth-card
+            @extend .carousel-cards-mobile
+            margin-right: 10px !important
+            background-image: linear-gradient(#36333300, #000000b6), url('../image/kena.jpg')
 
 .game-sale
     height: 330px
@@ -203,19 +192,12 @@ header
             font-size: 18px
             font-weight: 400
         a
-            padding: 5px 15px
-            font-size: 12px
-            color: $fontcolor
-            text-transform: uppercase
-            display: inline-flex
-            align-items: center
-            border: 1px solid $fontcolor
-            border-radius: 4px
-            letter-spacing: 0.8px
+            @extend .more-button
     .sale-carousel
         display: flex
         gap: 20px
-        overflow: scroll
+        overflow-x: scroll
+        overflow-y: hidden
         padding-bottom: 50px
         .voidtrain-sale
             @extend .sale-cards-size
@@ -270,7 +252,51 @@ header
         background: rgb(245, 245, 245)
 
 
-    
-
-
-
+.free-section
+    margin-top: 40px
+    width: 375px
+    height: 400px
+    background-color: $grey
+    padding: 30px 15px
+    .free-text-button
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 25px
+        .icon-text
+            display: flex
+            gap: 20px
+            align-items: center
+            .fa-gift
+                font-size: 30px
+            h6
+                font-size: 18px
+                font-weight: 400
+        a
+            @extend .more-button
+    .free-game-list
+        display: flex
+        gap: 20px
+        overflow-x: scroll
+        overflow-y: hidden
+        padding-bottom: 20px
+        .gods-fall-sale
+            @extend .free-cards-size
+            .image-free
+                background-image: url('../image/gods-fall.jpg')
+            div
+                p
+                    font-size: 14px
+                .free-text
+                    color: #F5F5F599
+        .galactic-civ-sale
+            @extend .free-cards-size
+            .image-free
+                background-image: url('../image/gal-civ.jpg')
+                p
+                    background-color: black
+            div
+                p
+                    font-size: 14px
+                .free-text
+                    color: #F5F5F599
