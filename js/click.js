@@ -74,9 +74,22 @@ var swiper = new Swiper(".fourth-swipe", {
   },
 });
 
-// f=document.getElementById("foot")
-// z=document.getElementsByClassName("search-bar")
-// s=document.getElementById("stop-scroll")
-// if(f.style.height="100vh"){
-//   z.style.position="static"
-// }
+
+var swiper = new Swiper(".mySwiper3", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 0,
+  freeMode: true,
+  watchSlidesProgress: true
+});
+var swiper2 = new Swiper(".mySwiper2", {
+  loop: true,
+  spaceBetween: 20,
+  // autoplay: {
+  //   delay: 7000,
+  //   disableOnInteraction: false
+  // },
+  thumbs: {
+    swiper: swiper
+  }
+});

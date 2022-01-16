@@ -1,6 +1,7 @@
+@import mixins.sass
+    
 .carousel-cards-mobile
-    width: 330px
-    height: 440px
+    @include size (330px, 440px)
     border-radius: 16px
     background-repeat: no-repeat
     background-size: cover
@@ -8,20 +9,16 @@
     display: flex
     align-items: flex-end
     .detail
-        height: 195px
-        width: 100%
+        @include size (100%, 195px)
+        @include flex (column)
         padding: 10px 20px
-        display: flex
-        flex-direction: column
         color: #f5f5f5
         .coming-date
-            font-size: 10px
+            @include font (10px, 600)
             margin-bottom: 8px
-            font-weight: 600
         .game-info
-            font-size: 16px
+            @include font (16px, $height: 20px)
             margin-bottom: 25px
-            line-height: 20px
         .start-price
             font-size: 15px
         .price
@@ -29,11 +26,8 @@
 
 
 .sale-cards-size
-    width: 305px
-    height: 235px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+    @include flex (column, space-between)
+    @include size (305px, 235px)
     img
         height: 170px
         border-radius: 5px
@@ -68,36 +62,28 @@
 
 
 .free-cards-size
-    width: 315px
-    height: 260px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+    @include flex (column, space-between)
+    @include size (315px, 260px)
     .image-free
+        @include size (305px, 195px)
         position: relative
-        width: 305px
-        height: 195px
         background-position: top center
         background-repeat: no-repeat
         background-size: contain
         border-radius: 5px
         p
+            @include font (12px, 600, $align: center)
             position: absolute
             bottom: 0
             text-transform: uppercase
             background-color: #0078f2
             width: 100%
-            text-align: center
-            font-size: 12px
-            font-weight: 600
             padding: 4px 0
             border-radius: 0 0 5px 5px
 
 
 .text-button
-        display: flex
-        justify-content: space-between
-        align-items: center
+        @include flex ($justify: space-between, $align: center)
         margin-bottom: 25px
         .icon-text
             display: flex
@@ -106,19 +92,16 @@
             .fa-gift
                 font-size: 30px
             h6
-                font-size: 18px
-                font-weight: 400
+                @include font (18px, 400)
+
         a
             @extend .more-button
-            font-weight: 500
-            font-size: 10px
+            @include font (10px, 500)
             padding: 8px 15px
 
 .new-release-card
-    width: 235px
-    height: 85px
-    display: flex
-    align-items: center
+    @include flex ($align: center)
+    @include size (235px, 85px)
     gap: 15px
     padding-left: 15px
     margin-bottom: 25px
@@ -127,9 +110,7 @@
         border-radius: 3px
     .game-detail
         h6
-            font-size: 14px
-            font-weight: 400
-            letter-spacing: 0.6px
+            @include font (14px, 400, 0.6px)
             margin-bottom: 4px
         .new-epic-button
             background-color: #2a2a2a
@@ -143,8 +124,7 @@
             text-transform: uppercase
             margin-bottom: 8px
         div
-            display: flex
-            align-items: center
+            @include flex ($align: center)
             gap: 8px
             .p-sale-button
                 @extend .sale-box
@@ -157,9 +137,8 @@
                 color: #F5F5F599
 
 .default-card-size
+    @include size (215px, 350px)
     margin-top: 20px
-    width: 215px
-    height: 350px
     img
         width: 100%
         border-radius: 4px
@@ -167,9 +146,7 @@
         margin-top: 10px
         padding-left: 3px
         h6
-            font-size: 14px
-            font-weight: 400
-            letter-spacing: 0.6px
+            @include font (14px, 400, 0.6px)
             margin-bottom: 4px
         .new-epic-button
             background-color: #2a2a2a
@@ -183,8 +160,7 @@
             text-transform: uppercase
             margin-bottom: 8px
         div
-            display: flex
-            align-items: center
+            @include flex ($align: center)
             gap: 8px
             .p-sale-button
                 @extend .sale-box

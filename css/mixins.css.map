@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "variables.sass"
+        "../sass/mixins.sass"
     ],
     "names": [],
-    "file": "variables.css"
+    "file": "mixins.css"
 }

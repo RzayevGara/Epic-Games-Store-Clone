@@ -9,18 +9,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="sass/index-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body id="stop-scroll">
     <header>
         <div class="navbar">
-            <img src="image/epic logo.png" alt="">
+            <div class="left-sec">
+                <img src="image/epic logo.png" alt="">
+                <ul class="pc-navbar-list">
+                    <li><a id="active" href="#">store</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">unreal engine</a></li>
+                </ul>
+            </div>
             <div class="hamburger-menu" id="x-menu" onclick="openright()">
                 <div class="line" id="tr-right"></div>
                 <div class="line" id="hide"></div>
                 <div class="line" id="tr-left"></div>
             </div>
+            <div class="right-sec">
+                <i class="fas fa-globe"></i>
+                <div class="sign">
+                    <i class="fas fa-user"></i>
+                    <p>sign in</p>
+                </div>
+                <a href="#">Download</a>
+            </div>
+
         </div>
     </header>
     <div class="right-bar" id="myRightbar" style="right: -100%">
@@ -44,13 +61,26 @@
         </div>
     </div>
     <div class="search-bar">
-        <i class="fas fa-search"></i>
-        <div onclick="myFunction()">
+        <i class="fas fa-search search-icon-mobile"></i>
+        <div class="discover-menu" onclick="myFunction()">
             <p>Discover</p>
             <i class="fas fa-chevron-down" id="down"></i>
         </div>
+        <div class="search-bar-main">
+            <div class="search-div">
+                <i class="fas fa-search search-icon-pc"></i>
+                <form>
+                    <input placeholder="Search" type="text">
+                </form>
+            </div>
+            <ul>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="discover-menu" id="mySidenav" style="display: none">
+    <div class="discover-bar" id="mySidenav" style="display: none">
         <ul>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Browse</a></li>
@@ -109,6 +139,107 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
+
+
+    <div class="pc-big-ca">
+        <div class="swiper mySwiper2 pc-swiper-f">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide pc-swipe-first-img">
+                  <div class="text-area">
+                      <p class="r-date">out now</p>
+                      <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                      <div class="price-text">
+                          <p>Starting at $39.99</p>
+                          <a href="#">buy now</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide pc-swipe-second-img">
+                <div class="text-area">
+                    <p class="r-date">out now</p>
+                    <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                    <div class="price-text">
+                        <p>Starting at $39.99</p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide pc-swipe-third-img">
+                <div class="text-area">
+                    <p class="r-date">out now</p>
+                    <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                    <div class="price-text">
+                        <p>Starting at $39.99</p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide pc-swipe-fourth-img">
+                <div class="text-area">
+                    <p class="r-date">Coming january 20</p>
+                    <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                    <div class="price-text">
+                        <p>Starting at $20.99</p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide pc-swipe-fifth-img">
+                <div class="text-area">
+                    <p class="r-date">out now</p>
+                    <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                    <div class="price-text">
+                        <p>Starting at $39.99</p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide pc-swipe-sixth-img">
+                <div class="text-area">
+                    <p class="r-date">out now</p>
+                    <p class="game-detal">Venture into the brutal Norse realms and fight to fulfill a deeply personal quest.</p>
+                    <div class="price-text">
+                        <p>Starting at $39.99</p>
+                        <a href="#">buy now</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper3 pc-swiper-s">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="image/gow.jpg" width="65px" />
+                  <p>God of War</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/naraka.jpeg" width="65px" />
+                  <p>Naraka</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/genshin.jpeg" width="65px" />
+                  <p>Genshin Impact</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/r6.png" width="65px" />
+                  <p>Rainbow Six: Extraction</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/far-cry-6-cover.png" width="65px" />
+                  <p>Far Cry 6</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="image/kena.jpg" width="65px" />
+                  <p>KENA</p>
+                </div>
+              </div>
+          </div>
+    </div>
+
+
+
+
+    
     <div class="game-sale">
         <div class="text-button">
             <h6>Games On Sale</h6>
