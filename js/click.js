@@ -85,10 +85,10 @@ var swiper = new Swiper(".mySwiper3", {
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   spaceBetween: 20,
-  // autoplay: {
-  //   delay: 7000,
-  //   disableOnInteraction: false
-  // },
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false
+  },
   thumbs: {
     swiper: swiper
   }

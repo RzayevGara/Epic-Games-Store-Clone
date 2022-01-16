@@ -197,6 +197,25 @@ header
         .warshmallows-sale
             @extend .voidtrain-sale
 
+.game-sale-pc
+    @include flex (column, $align: center)
+    .main
+        width: 75%
+        .text-icon
+            @include flex(row, space-between, center)
+            margin-top: 35px
+            .icons
+                @include flex (row, $align: center)
+                gap: 10px
+                .circle
+                    @include size (30px, 30px)
+                    @include flex (row,center, center)
+                    border-radius: 50%
+                    background-color: $grey
+                    i
+                        font-size: 12px
+
+
 .swiper
     width: 100%
     padding-left: 15px
@@ -554,16 +573,16 @@ footer
                 background-image: linear-gradient(#36333300, #000000b6), url(../image/far-cry-6.jpg)
             .pc-swipe-sixth-img
                 background-image: linear-gradient(#36333300, #000000b6), url(../image/kena-tumb.jpg)
-
         .pc-swiper-s
-            width: 20%
+            width: 23%
+            margin: 0
             .swiper-wrapper
                 @include flex (column)
                 gap: 5px
                 .swiper-slide
                     &:hover
                         cursor: pointer
-                    @include size(255px, 105px)
+                    @include size(100%, 105px)
                     display: flex
                     align-items: center
                     gap: 20px
@@ -575,3 +594,6 @@ footer
                         line-height: 25px
             .swiper-slide-thumb-active
                 background-color: $grey
+
+    .game-sale
+        display: none

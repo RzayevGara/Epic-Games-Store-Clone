@@ -747,6 +747,78 @@ header .navbar .right-sec {
           text-decoration-line: line-through;
 }
 
+.game-sale-pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-sale-pc .main {
+  width: 75%;
+}
+
+.game-sale-pc .main .text-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+}
+
+.game-sale-pc .main .text-icon .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.game-sale-pc .main .text-icon .icons .circle {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+
+.game-sale-pc .main .text-icon .icons .circle i {
+  font-size: 12px;
+}
+
 .swiper {
   width: 100%;
   padding-left: 15px;
@@ -1373,7 +1445,8 @@ footer .terms-logo .epic-logo .unreal-f-logo {
     background-image: linear-gradient(#36333300, #000000b6), url(../image/kena-tumb.jpg);
   }
   .pc-big-ca .pc-swiper-s {
-    width: 20%;
+    width: 23%;
+    margin: 0;
   }
   .pc-big-ca .pc-swiper-s .swiper-wrapper {
     display: -webkit-box;
@@ -1386,7 +1459,7 @@ footer .terms-logo .epic-logo .unreal-f-logo {
     gap: 5px;
   }
   .pc-big-ca .pc-swiper-s .swiper-wrapper .swiper-slide {
-    width: 255px;
+    width: 100%;
     height: 105px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1409,6 +1482,9 @@ footer .terms-logo .epic-logo .unreal-f-logo {
   }
   .pc-big-ca .pc-swiper-s .swiper-slide-thumb-active {
     background-color: #2a2a2a;
+  }
+  .game-sale {
+    display: none;
   }
 }
 /*# sourceMappingURL=index-style.css.map */

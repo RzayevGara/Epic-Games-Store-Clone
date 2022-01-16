@@ -67,6 +67,21 @@
   border-radius: 5px;
 }
 
+.sale-card-pc {
+  width: 215px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .sale-box, .new-release-card .game-detail div .p-sale-button, .default-card-size .game-detail div .p-sale-button {
   background-color: #0078f2;
   padding: 5px 10px;
