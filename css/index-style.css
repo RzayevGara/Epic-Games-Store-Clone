@@ -88,7 +88,22 @@ a {
   border-radius: 5px;
 }
 
-.sale-box, .new-release-card .game-detail div .p-sale-button, .third-swipe .swiper-third .car-tuning .game-detail div .p-sale-button, .default-card-size .game-detail div .p-sale-button, .fourth-swipe .swiper-fourth .game-detail div .p-sale-button, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
+.sale-card-pc {
+  width: 215px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sale-box, .new-release-card .game-detail div .p-sale-button, .third-swipe .swiper-third .car-tuning .game-detail div .p-sale-button, .default-card-size .game-detail div .p-sale-button, .game-sale-pc .main .cards .allcards .card .game-detail div .p-sale-button, .fourth-swipe .swiper-fourth .game-detail div .p-sale-button, .game-sale .sale-carousel .voidtrain-sale div a, .game-sale .sale-carousel .dead-cells-sale div a, .game-sale .sale-carousel .warshmallows-sale div a {
   background-color: #0078f2;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -263,30 +278,30 @@ a {
   color: #F5F5F599;
 }
 
-.default-card-size, .fourth-swipe .swiper-fourth {
+.default-card-size, .game-sale-pc .main .cards .allcards .card, .fourth-swipe .swiper-fourth {
   width: 215px;
   height: 350px;
   margin-top: 20px;
 }
 
-.default-card-size img, .fourth-swipe .swiper-fourth img {
+.default-card-size img, .game-sale-pc .main .cards .allcards .card img, .fourth-swipe .swiper-fourth img {
   width: 100%;
   border-radius: 4px;
 }
 
-.default-card-size .game-detail, .fourth-swipe .swiper-fourth .game-detail {
+.default-card-size .game-detail, .game-sale-pc .main .cards .allcards .card .game-detail, .fourth-swipe .swiper-fourth .game-detail {
   margin-top: 10px;
   padding-left: 3px;
 }
 
-.default-card-size .game-detail h6, .fourth-swipe .swiper-fourth .game-detail h6 {
+.default-card-size .game-detail h6, .game-sale-pc .main .cards .allcards .card .game-detail h6, .fourth-swipe .swiper-fourth .game-detail h6 {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.6px;
   margin-bottom: 4px;
 }
 
-.default-card-size .game-detail .new-epic-button, .fourth-swipe .swiper-fourth .game-detail .new-epic-button {
+.default-card-size .game-detail .new-epic-button, .game-sale-pc .main .cards .allcards .card .game-detail .new-epic-button, .fourth-swipe .swiper-fourth .game-detail .new-epic-button {
   background-color: #2a2a2a;
   padding: 5px 10px;
   color: #F5F5F5;
@@ -303,7 +318,7 @@ a {
   margin-bottom: 8px;
 }
 
-.default-card-size .game-detail div, .fourth-swipe .swiper-fourth .game-detail div {
+.default-card-size .game-detail div, .game-sale-pc .main .cards .allcards .card .game-detail div, .fourth-swipe .swiper-fourth .game-detail div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,17 +328,17 @@ a {
   gap: 8px;
 }
 
-.default-card-size .game-detail div p, .fourth-swipe .swiper-fourth .game-detail div p {
+.default-card-size .game-detail div p, .game-sale-pc .main .cards .allcards .card .game-detail div p, .fourth-swipe .swiper-fourth .game-detail div p {
   font-size: 12px;
 }
 
-.default-card-size .game-detail div .sale-price, .fourth-swipe .swiper-fourth .game-detail div .sale-price {
+.default-card-size .game-detail div .sale-price, .game-sale-pc .main .cards .allcards .card .game-detail div .sale-price, .fourth-swipe .swiper-fourth .game-detail div .sale-price {
   color: #F5F5F599;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
 }
 
-.default-card-size .game-detail div .grey-text, .fourth-swipe .swiper-fourth .game-detail div .grey-text {
+.default-card-size .game-detail div .grey-text, .game-sale-pc .main .cards .allcards .card .game-detail div .grey-text, .fourth-swipe .swiper-fourth .game-detail div .grey-text {
   color: #F5F5F599;
 }
 
@@ -748,16 +763,7 @@ header .navbar .right-sec {
 }
 
 .game-sale-pc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
 }
 
 .game-sale-pc .main {
@@ -813,10 +819,29 @@ header .navbar .right-sec {
           align-items: center;
   border-radius: 50%;
   background-color: #2a2a2a;
+  cursor: pointer;
 }
 
 .game-sale-pc .main .text-icon .icons .circle i {
   font-size: 12px;
+}
+
+.game-sale-pc .main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.game-sale-pc .main .cards .allcards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 26px;
+  position: relative;
+  right: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .swiper {
@@ -948,13 +973,24 @@ header .navbar .right-sec {
 }
 
 .browse-sec {
-  width: 100%;
-  height: 310px;
-  margin: 80px 0;
-  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
 }
 
-.browse-sec .img-sec {
+.browse-sec .main {
+  width: 85%;
+}
+
+.browse-sec .main .img-sec {
   width: 100%;
   height: 190px;
   display: -webkit-box;
@@ -972,15 +1008,17 @@ header .navbar .right-sec {
   padding: 0 7px;
 }
 
-.browse-sec .img-sec img {
+.browse-sec .main .img-sec img {
   width: 100%;
 }
 
-.browse-sec h4 {
-  @inclide font (20px, 500) {}  padding: 20px 0 0 40px;
+.browse-sec .main .text h4 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 0 0 40px;
 }
 
-.browse-sec p {
+.browse-sec .main .text p {
   font-size: 14px;
   color: #F5F5F599;
   padding: 10px 0 0 40px;
@@ -1485,6 +1523,173 @@ footer .terms-logo .epic-logo .unreal-f-logo {
   }
   .game-sale {
     display: none;
+  }
+  .game-sale-pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .second-swipe {
+    display: none;
+  }
+  .free-section {
+    width: 75%;
+    height: 560px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 8px;
+  }
+  .free-section .free-text-button {
+    padding: 0px 30px;
+  }
+  .free-section .free-game-list {
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .free-section .free-game-list .gods-fall-sale {
+    width: 670px;
+    height: 50%;
+  }
+  .free-section .free-game-list .gods-fall-sale .image-free {
+    width: 670px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .free-section .free-game-list .galactic-civ-sale {
+    width: 670px;
+    height: 50%;
+  }
+  .free-section .free-game-list .galactic-civ-sale .image-free {
+    width: 670px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .third-swipe {
+    width: 75%;
+    height: auto;
+    padding: 0;
+  }
+  .third-swipe .swiper-wrapper {
+    -webkit-transform: none !important;
+            transform: none !important;
+  }
+  .third-swipe .swiper-wrapper .swiper-third {
+    width: 33%;
+    height: auto;
+  }
+  .third-swipe .swiper-wrapper .swiper-third .car-tuning {
+    height: 160px;
+    width: 440px;
+    gap: 30px;
+    padding-left: 30px;
+    margin: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-radius: 16px;
+  }
+  .third-swipe .swiper-wrapper .swiper-third .car-tuning:hover {
+    background-color: #2a2a2a;
+    cursor: pointer;
+  }
+  .third-swipe .swiper-wrapper .swiper-third .car-tuning img {
+    width: 95px;
+    height: 128px;
+  }
+  .third-swipe .swiper-pagination {
+    display: none;
+  }
+  .fourth-swipe {
+    width: 75%;
+  }
+  .browse-sec {
+    margin-top: 5%;
+  }
+  .browse-sec .main {
+    width: 75%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .browse-sec .main .img-sec {
+    width: 60%;
+    height: 450px;
+  }
+  .browse-sec .main .img-sec img {
+    width: 95%;
+  }
+  .browse-sec .main .text p {
+    width: 100%;
+  }
+  footer {
+    height: 50vh;
+    margin-top: 7%;
+    padding: 10px 60px;
+  }
+  footer .resources-madeby {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 35px;
+    margin-top: 30px;
+  }
+  footer .resources-madeby .madeby {
+    margin: 0;
+  }
+  footer .epic-text {
+    margin-top: 30px;
+    width: 55%;
+  }
+  footer .terms-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .terms-logo ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 25px;
+  }
+  footer .terms-logo ul li {
+    color: #ccc;
   }
 }
 /*# sourceMappingURL=index-style.css.map */

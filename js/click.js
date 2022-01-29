@@ -11,6 +11,17 @@ function myFunction(){
     }
 }
 
+function slideright(){
+  slide = document.getElementById("asd")
+  slide.style.right="50%";
+}
+
+
+function slideleft(){
+  slide = document.getElementById("asd")
+  slide.style.right="0";
+}
+
 
 function openright(){
     r=document.getElementById("myRightbar")
@@ -56,6 +67,16 @@ var swiper = new Swiper(".second-swipe", {
     },
   });
 
+// var swiper = new Swiper(".third-swipe", {
+//   slidesPerView: "auto",
+//   spaceBetween: 6,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+
+
 var swiper = new Swiper(".third-swipe", {
   slidesPerView: "auto",
   spaceBetween: 6,
@@ -93,3 +114,5 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper
   }
 });
+
+

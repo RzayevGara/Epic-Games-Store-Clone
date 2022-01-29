@@ -268,30 +268,124 @@
             </div>
         </div>
     </div>
-
     <div class="game-sale-pc">
         <div class="main">
             <div class="text-icon">
                 <p>Game On Sale</p>
                 <div class="icons">
-                    <div class="circle">
-                        <i class="fas fa-chevron-left"></i>
+                    <div class="circle" onclick="slideleft()">
+                        <i class="fas fa-chevron-left" ></i>
                     </div>
-                    <div class="circle">
-                        <i class="fas fa-chevron-right"></i>
+                    <div class="circle" onclick="slideright()">
+                        <i class="fas fa-chevron-right" ></i>
                     </div>
                 </div>
             </div>
             <div class="cards">
-                
+                <div class="allcards" id="asd">
+                    <div class="card">
+                        <img src="image/far-cry-6-cover.png" alt="">
+                        <div class="game-detail">
+                            <h6>Far Cry 6</h6>
+                            <div>
+                                <p class="p-sale-button">-35%</p>
+                                <p class="sale-price">$32.99</p>
+                                <p>$21.44</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/rdr2.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Red Dead Redemption 2</h6>
+                            <div>
+                                <p class="p-sale-button">-50%</p>
+                                <p class="sale-price">$34.99</p>
+                                <p>$17.49</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/c2077" alt="">
+                        <div class="game-detail">
+                            <h6>Cyberpunk 2077</h6>
+                            <div>
+                                <p class="p-sale-button">-50%</p>
+                                <p class="sale-price">$29.99</p>
+                                <p>$14.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/kena.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Kena: Bridge of Spirits</h6>
+                            <div>
+                                <p class="p-sale-button">-30%</p>
+                                <p class="sale-price">$20.99</p>
+                                <p>$14.69</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/gta5.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Grand Theft Auto V</h6>
+                            <div>
+                                <p class="p-sale-button">-50%</p>
+                                <p class="sale-price">$24.99</p>
+                                <p>$12.49</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/back4bld.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Back 4 Blood</h6>
+                            <div>
+                                <p class="p-sale-button">-40%</p>
+                                <p class="sale-price">$26.99</p>
+                                <p>$16.19</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/daysgone.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Days Gone</h6>
+                            <div>
+                                <p class="p-sale-button">-40%</p>
+                                <p class="sale-price">$39.99</p>
+                                <p>$23.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/horizon.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Horizon Zero Dawn</h6>
+                            <div>
+                                <p class="p-sale-button">-50%</p>
+                                <p class="sale-price">$39.99</p>
+                                <p>$19.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="image/darkestcc.jpg" alt="">
+                        <div class="game-detail">
+                            <h6>Darkest Dungeon</h6>
+                            <div>
+                                <p class="p-sale-button">-10%</p>
+                                <p class="sale-price">$15.99</p>
+                                <p>$14.39</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
-
-    
     <div class="swiper second-swipe">
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-second">
@@ -309,6 +403,9 @@
         </div>
         <div class="swiper-pagination"></div>
     </div>
+
+
+
     <div class="free-section">
         <div class="free-text-button">
             <div class="icon-text">
@@ -691,11 +788,15 @@
         </div>
     </div>
     <div class="browse-sec">
-        <div class="img-sec">
-            <img src="image/browse.png" alt="">
+        <div class="main">
+            <div class="img-sec">
+                <img src="image/browse.png" alt="">
+            </div>
+            <div class="text">
+                <h4>Browse</h4>
+                <p>Explore our catalog for your next favorite game!</p>
+            </div>
         </div>
-        <h4>Browse</h4>
-        <p>Explore our catalog for your next favorite game!</p>
     </div>
     <footer id="foot">
         <div class="icons">
@@ -753,7 +854,6 @@
             </div>
         </div>
     </footer>
-
       <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="js/click.js"></script>
 </body>

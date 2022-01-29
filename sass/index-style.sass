@@ -198,7 +198,7 @@ header
             @extend .voidtrain-sale
 
 .game-sale-pc
-    @include flex (column, $align: center)
+    display: none
     .main
         width: 75%
         .text-icon
@@ -212,8 +212,22 @@ header
                     @include flex (row,center, center)
                     border-radius: 50%
                     background-color: $grey
+                    cursor: pointer
                     i
                         font-size: 12px
+        .cards
+            
+            display: flex
+            overflow: hidden
+            .allcards
+                display: flex
+                gap: 26px
+                position: relative
+                right: 0
+                transition: 0.4s
+                .card
+                    @extend .default-card-size
+
 
 
 .swiper
@@ -309,25 +323,27 @@ header
             margin-right: 10px
 
 .browse-sec
-    @include size (100%, 310px)
-    margin: 80px 0
-    padding: 0 15px
-    .img-sec
-        @include size (100%, 190px)
-        @include flex ($justify: center,$align: center)
-        background: rgb(0, 0, 0) linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 120, 242))
-        border-radius: 16px
-        padding: 0 7px
-        img
-            width: 100%
-    h4
-        @inclide font (20px, 500)
-        padding: 20px 0 0 40px
-    p
-        font-size: 14px
-        color: #F5F5F599
-        padding: 10px 0 0 40px
-        width: 90%
+    @include flex (column, $align: center)
+    margin-top: 50px
+    .main
+        width: 85%
+        .img-sec
+            @include size (100%, 190px)
+            @include flex ($justify: center,$align: center)
+            background: rgb(0, 0, 0) linear-gradient(to right bottom, rgb(0, 0, 0), rgb(0, 120, 242))
+            border-radius: 16px
+            padding: 0 7px
+            img
+                width: 100%
+        .text
+            h4
+                @include font (20px, 500)
+                padding: 20px 0 0 40px
+            p
+                font-size: 14px
+                color: #F5F5F599
+                padding: 10px 0 0 40px
+                width: 90%
 
 footer
     @include size (100%, 100vh)
@@ -597,3 +613,90 @@ footer
 
     .game-sale
         display: none
+    .game-sale-pc
+        @include flex (column, $align: center)
+    .second-swipe
+        display: none
+    .free-section
+        width: 75%
+        height: 560px
+        margin: auto
+        margin-top: 50px
+        border-radius: 8px
+        .free-text-button
+            padding: 0px 30px
+        .free-game-list
+            overflow: visible
+            @include flex (row, space-evenly, center)
+            .gods-fall-sale
+                @include size(670px, 50%)
+                .image-free
+                    @include size(670px, 380px)
+                    margin-bottom: 20px
+            .galactic-civ-sale
+                @include size(670px, 50%)
+                .image-free
+                    @include size(670px, 380px)
+                    margin-bottom: 20px
+    .third-swipe
+        width: 75%
+        height: auto
+        padding: 0
+        .swiper-wrapper
+            transform: none !important
+            .swiper-third
+                width: 33%
+                height: auto
+                .car-tuning
+                    height: 160px
+                    width: 440px
+                    gap: 30px
+                    padding-left: 30px
+                    margin: 0
+                    transition: 0.3s
+                    border-radius: 16px
+                    &:hover
+                        background-color: $grey
+                        cursor: pointer
+                    img
+                        width: 95px
+                        height: 128px
+        .swiper-pagination
+            display: none
+    
+    .fourth-swipe
+        width: 75%
+    
+    .browse-sec
+        margin-top: 5%
+        .main
+            width: 75%
+            @include flex (row, $align: center)
+            .img-sec
+                width: 60%
+                height: 450px
+                img
+                    width: 95%
+            .text
+                p
+                    width: 100%
+    footer
+        height: 50vh
+        margin-top: 7%
+        padding: 10px 60px
+        .resources-madeby
+            flex-direction: row
+            gap: 35px
+            margin-top: 30px
+            .madeby
+                margin: 0
+        .epic-text
+            margin-top: 30px
+            width: 55%
+        .terms-logo
+            @include flex (row, space-between)
+            ul
+                @include flex(row)
+                gap: 25px
+                li
+                    color: #ccc
