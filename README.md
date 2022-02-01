@@ -11,5 +11,5 @@
 - JavaScript
 ```
 
-[Project link](https://rzayevgara.github.io/Epic-Games-Store-Clone)
+# [Go To The Project](https://rzayevgara.github.io/Epic-Games-Store-Clone)
 
